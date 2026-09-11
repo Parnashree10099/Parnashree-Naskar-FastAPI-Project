@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #333;
+}
+
+button {
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+a {
+    color: #333;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.container {
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+}
+
+h1 {
+    color: #1f2937;
+    font-size: 30px;
+}
+
+h2,
+h3 {
+    color: #374151;
+}
+
+input {
+    background: #fafafa;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: white;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+button {
+    background: #2563eb;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.container p {
+    margin-top: 15px;
+}
+
+.container a {
+    margin-top: 12px;
+}
+
+.container br {
+    line-height: 1.8;
+}
+
+form button {
+    margin-top: 5px;
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+<!-- dashboard-->
+
+.dashboard-container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-container h1 {
+    margin-bottom: 30px;
+}
+
+.dashboard-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2563eb;
+    margin-bottom: 20px;
+}
+
+.dashboard-container button {
+    margin-top: 10px;
+}
+
+.dashboard-container a {
+    margin: 15px 10px 0;
+}
+.dashboard-container input[type="file"] {
+    max-width: 350px;
+    margin: 15px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.dashboard-container #profileImage {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.dashboard-container #message {
+    margin: 15px 0;
+}
+
+.dashboard-container button {
+    max-width: 350px;
+    margin: 10px auto;
+    display: block;
+}
+.dashboard-container a[href="/change-password"] {
+    display: inline-block;
+    background: #f3f4f6;
+    color: #374151;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.dashboard-container a[href="/change-password"]:hover {
+    background: #e5e7eb;
+    text-decoration: none;
+}
+
+.dashboard-container button:last-of-type {
+    background: #dc2626;
+    margin-top: 15px;
+}
+
+.dashboard-container button:last-of-type:hover {
+    background: #b91c1c;
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    .dashboard-container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .dashboard-container button,
+    .dashboard-container input[type="file"] {
+        max-width: 100%;
+    }
+}
+
+.dashboard-section {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    text-align: left;
+}
+
+.dashboard-section h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-info p {
+    margin: 0;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.dashboard-section form {
+    gap: 14px;
+}
+
+.dashboard-section #profileImage {
+    margin: 20px auto;
+}
+.account-section {
+    text-align: center;
+}
+
+.account-section h2 {
+    text-align: center;
+}
+
+.account-section a {
+    display: block;
+    max-width: 350px;
+    margin: 15px auto;
+    padding: 12px;
+    background: #f3f4f6;
+    color: #374151;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.account-section a:hover {
+    background: #e5e7eb;
+    text-decoration: none;
+}
+
+.account-section button {
+    max-width: 350px;
+    margin: 10px auto;
+}
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dashboard-section {
+    margin-top: 0;
+}
+
+.container h1,
+.container h2 {
+    color: #1e293b;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.container label {
+    color: #374151;
+    margin-bottom: -8px;
+}
+
+.container input {
+    border: 1px solid #d1d5db;
+    padding: 13px 14px;
+}
+
+.container button {
+    margin-top: 8px;
+}
+
+.container a {
+    text-align: center;
+}
+
+.container #message {
+    min-height: 20px;
+    color: #374151;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #33a49c,
+        #e4f1ee,
+        #476489
+    );
+}
+.container,
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+}
+button,
+.account-section a {
+    transition: all 0.25s ease;
+}
+
+button:hover,
+.account-section a:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
