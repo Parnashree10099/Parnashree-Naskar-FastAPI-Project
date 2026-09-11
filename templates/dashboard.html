@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+
+    <h1>User Dashboard</h1>
+    <div class="dashboard-section">
+    <h2>My Profile</h2>
+    <div class="profile-info">
+
+    <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+
+    <p><strong>Email Address:</strong> <span id="email"></span></p>
+
+    <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+
+    <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+
+    <hr>
+    </div>
+</div>
+<div class="dashboard-section">
+    <h2>Update Profile</h2>
+
+    <form id="profileForm">
+
+        <label>Full Name:</label><br>
+        <input type="text" id="editFullName" required>
+        <br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" id="editEmail" disabled>
+        <br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" id="editPhone" required>
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" id="editDob" required>
+        <br><br>
+
+        <button type="submit">Update Profile</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <hr>
+    </div>
+
+<div class="dashboard-section">
+    <h2>Profile Picture</h2>
+
+    <img id="profileImage" width="150">
+
+    <br><br>
+
+    <input type="file" id="profilePicture">
+
+    <br><br>
+
+    <button id="uploadButton">Upload / Replace Picture</button>
+
+    <button id="deletePictureButton">Delete Picture</button>
+
+    <br><br>
+    <div class="dashboard-section account-section">
+    <h2>Account Settings</h2>
+
+    <a href="/change-password">Change Password</a>
+    <br>
+    <button type="button" onclick="logoutUser()">Logout</button>
+    </div>
+    </div>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+
+</body>
+</html>
